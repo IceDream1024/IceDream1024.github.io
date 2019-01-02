@@ -4,5 +4,9 @@
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F01%2F01%2Fhello-world%2F</url>
     <content type="text"><![CDATA[欢迎来到我的博客，博客创建于2019-1-1 创建时间 2019-1-1 18:30:19]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>React</tag>
+      </tags>
   </entry>
 </search>
