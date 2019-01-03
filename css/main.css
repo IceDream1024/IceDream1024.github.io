@@ -1992,7 +1992,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #229cff;
+  background: #ff1a2f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3354,4 +3354,16 @@ a {
 }
 a:hover {
   color: #ff9956;
+}
+.pace .pace-progress:before {
+  background: #c97945;
+}
+.pace .pace-activity {
+  border: 5px solid #c97945;
+}
+.pace .pace-activity:after {
+  border: 5px solid #c97945;
+}
+.pace .pace-activity:before {
+  border: 5px solid #c97945;
 }
