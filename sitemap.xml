@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://icedream1024.coding.me/2019/01/03/React%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2019-01-05T03:30:23.947Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://icedream1024.coding.me/tags/index.html</loc>
     
     <lastmod>2019-01-03T09:21:09.975Z</lastmod>
@@ -12,27 +19,6 @@
     <loc>https://icedream1024.coding.me/categories/index.html</loc>
     
     <lastmod>2019-01-03T09:20:38.122Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://icedream1024.coding.me/2019/01/03/ReactNative%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86s/</loc>
-    
-    <lastmod>2019-01-03T08:49:36.934Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://icedream1024.coding.me/2019/01/03/React%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86s/</loc>
-    
-    <lastmod>2019-01-03T08:49:30.474Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://icedream1024.coding.me/2019/01/03/React%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    
-    <lastmod>2019-01-03T08:18:53.087Z</lastmod>
     
   </url>
   
