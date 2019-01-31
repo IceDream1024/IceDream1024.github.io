@@ -98,9 +98,13 @@
 <meta property="og:image" content="http://blog.icedream1024.top/images/flutter/3.27.54.png">
 <meta property="og:image" content="http://blog.icedream1024.top/images/flutter/3.36.00.png">
 <meta property="og:image" content="http://blog.icedream1024.top/images/flutter/3.27.10.png">
-<meta property="og:image" content="http://blog.icedream1024.top/flutter/3.47.02.png">
+<meta property="og:image" content="http://blog.icedream1024.top/images/flutter/3.47.02.png">
 <meta property="og:image" content="http://blog.icedream1024.top/images/flutter/Screenshot_1548489281.png">
-<meta property="og:updated_time" content="2019-01-26T07:56:08.311Z">
+<meta property="og:image" content="http://blog.icedream1024.top/images/flutter/4.16.09.png">
+<meta property="og:image" content="http://blog.icedream1024.top/images/flutter/4.18.12.png">
+<meta property="og:image" content="http://blog.icedream1024.top/images/flutter/4.23.06.png">
+<meta property="og:image" content="http://blog.icedream1024.top/images/flutter/4.27.48.png">
+<meta property="og:updated_time" content="2019-01-26T09:00:01.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter学习笔记">
 <meta name="twitter:description" content="Flutter 开发环境搭建(Mac OS) 使用国内镜像 12345678# 用vim编辑环境变量sudo vim ~/.bash_profile# 将一下两行粘贴到bash_profileexport PUB_HOSTED_URL=https://pub.flutter-io.cnexport FLUTTER_STORAGE_BASE_URL=https://storage.flutter-i">
@@ -374,7 +378,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-26T15:56:08+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-26T17:00:01+08:00">
                 2019-01-26
               </time>
             
@@ -447,7 +451,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  683
+                  886
                 </span>
               
 
@@ -463,7 +467,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -507,22 +511,17 @@
 </li>
 </ol>
 <hr>
-<h2 id="Flutter-常用技巧"><a href="#Flutter-常用技巧" class="headerlink" title="Flutter 常用技巧"></a>Flutter 常用技巧</h2><ul>
-<li><p>命令</p>
-<ol>
+<h2 id="Flutter-常用技巧"><a href="#Flutter-常用技巧" class="headerlink" title="Flutter 常用技巧"></a>Flutter 常用技巧</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><ol>
 <li>flutter create &lt;项目名称&gt;  - 新建Flutter项目</li>
 <li>flutter run - 运行项目</li>
 <li>flutter upgrade - 更新flutter SDK</li>
 </ol>
-</li>
-<li>快捷键<ol>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ol>
 <li>R键： 点击后热加载，直接查看预览效果</li>
 <li>P键：在虚拟机中显示网格，工作中常用</li>
 <li>O键：切换Android和IOS的预览模式</li>
 <li>Q键：退出调试预览模式</li>
 </ol>
-</li>
-</ul>
 <hr>
 <h2 id="Flutter-填坑大全"><a href="#Flutter-填坑大全" class="headerlink" title="Flutter 填坑大全"></a>Flutter 填坑大全</h2><h3 id="在启动项目的时候一直处于-Initializing-gradle…"><a href="#在启动项目的时候一直处于-Initializing-gradle…" class="headerlink" title="在启动项目的时候一直处于 Initializing gradle…"></a>在启动项目的时候一直处于 Initializing gradle…</h3><p><strong>如图所示</strong>：</p>
 <p><img src="/images/flutter/3.27.27.png" alt="Android Studio中"></p>
@@ -531,23 +530,58 @@
 <ol>
 <li><p>打开   &lt;你的flutter项目&gt;/android/gradle/wrapper/<strong>gradle-wrapper.properties</strong><br><img src="/images/flutter/3.36.00.png" alt="如图"></p>
 </li>
-<li><p>复制上图框选的gradle下载地址<br>此处需要注意将https\:中的 \ 去掉<br>🌰: https\://services.gradle.org/distributions/gradle-4.10.2-all.zip  &gt;  <a href="https://services.gradle.org/distributions/gradle-4.10.2-all.zip" target="_blank" rel="noopener">https://services.gradle.org/distributions/gradle-4.10.2-all.zip</a></p>
+<li><p>复制上图框选的gradle下载地址<br>此处需要注意将https\:中的 \ 去掉<br>🌰https\://services.gradle.org/distributions/gradle-4.10.2-all.zip  &gt;  <a href="https://services.gradle.org/distributions/gradle-4.10.2-all.zip" target="_blank" rel="noopener">https://services.gradle.org/distributions/gradle-4.10.2-all.zip</a></p>
 </li>
 <li><p>将下载链接复制到迅雷或者axel中，也可以使用其他下载工具</p>
 <p><img src="/images/flutter/3.27.10.png" alt="迅雷下载"></p>
 </li>
 <li><p>终端执行以下命令，将下载好的包解压后复制到目录中，然后就o98k了</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.gradle/wrapper/dists/</span><br><span class="line">open .</span><br></pre></td></tr></table></figure>
-<p><img src="/flutter/3.47.02.png" alt=""></p>
+<p><img src="/images/flutter/3.47.02.png" alt=""></p>
 </li>
 </ol>
 <blockquote>
 <p>这是因为启动安卓项目需要gradle然后本地没有安装对应版本的gradle包，所以需要自动安装，但是由于国内网络问题，下载速度贼慢甚至直接下载不了，所以我们只能自己找到对应版本的下载地址用迅雷或者axel等下载工具手动下载后手动安装</p>
 </blockquote>
 <hr>
-<h2 id="Flutter常用组件和API"><a href="#Flutter常用组件和API" class="headerlink" title="Flutter常用组件和API"></a>Flutter常用组件和API</h2><h3 id="Text"><a href="#Text" class="headerlink" title="Text"></a>Text</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Text Widget 示例代码</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context)&#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">'Text Widget Demo'</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        body: Center(</span><br><span class="line">          child: Text(</span><br><span class="line">            <span class="string">'I am a Text Widget'</span>,</span><br><span class="line">          ),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Flutter常用组件和API"><a href="#Flutter常用组件和API" class="headerlink" title="Flutter常用组件和API"></a>Flutter常用组件和API</h2><h3 id="Text-组件"><a href="#Text-组件" class="headerlink" title="Text - 组件"></a>Text - 组件</h3><blockquote>
+<p>用于显示一个单一样式的文本</p>
+</blockquote>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Text Widget 示例代码</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context)&#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">'Text Widget Demo'</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        body: Center(</span><br><span class="line">          child: Text(</span><br><span class="line">            <span class="string">'I am a Text Widget'</span>,</span><br><span class="line">          ),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>效果图</strong>:</p>
 <p><img src="/images/flutter/Screenshot_1548489281.png" alt="Text Widget 运行效果"></p>
+<h4 id="textAlign-属性"><a href="#textAlign-属性" class="headerlink" title="textAlign - 属性"></a>textAlign - 属性</h4><blockquote>
+<p>textAlign用于设置文本的对齐方式, 默认TextAlign.left</p>
+</blockquote>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// textAlign属性使用示例</span></span><br><span class="line">Text(</span><br><span class="line">    <span class="string">'textAlign Demo'</span>,</span><br><span class="line">    textAlign: TextAlign.center,</span><br><span class="line">    <span class="comment">// textAlign: TextAlign.values[2] 或通过 TextAlign枚举顺序使用</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="TextAlign-center"><a href="#TextAlign-center" class="headerlink" title="TextAlign.center"></a>TextAlign.center</h5><blockquote>
+<p>将文本对齐容器中心，使文字居中对齐</p>
+</blockquote>
+<p><img src="/images/flutter/4.16.09.png" alt="center"></p>
+</li>
+<li><h5 id="TextAlign-left"><a href="#TextAlign-left" class="headerlink" title="TextAlign.left"></a>TextAlign.left</h5><blockquote>
+<p>将文本对齐容器左边，使文字居左对齐</p>
+</blockquote>
+<p><img src="/images/flutter/4.18.12.png" alt="left"></p>
+</li>
+<li><h5 id="TextAlign-right"><a href="#TextAlign-right" class="headerlink" title="TextAlign.right"></a>TextAlign.right</h5><blockquote>
+<p>将文本对齐容器右边，使文字居右对齐</p>
+</blockquote>
+<p><img src="/images/flutter/4.23.06.png" alt="right"></p>
+</li>
+<li><h5 id="TextAlign-justify"><a href="#TextAlign-justify" class="headerlink" title="TextAlign.justify"></a>TextAlign.justify</h5><blockquote>
+<p>将文本拉伸至两端对齐，多余部分居文字起始方向对齐</p>
+</blockquote>
+<p><img src="/images/flutter/4.27.48.png" alt="justify"></p>
+</li>
+<li><h5 id="TextAlign-values"><a href="#TextAlign-values" class="headerlink" title="TextAlign.values"></a>TextAlign.values</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Text(</span><br><span class="line">    &apos;textAlign Demo&apos;,</span><br><span class="line">    textAlign: TextAlign.values[2],</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>通过传入对齐方式的枚举顺序来达到与上面相同的效果，只是调用方式不同，自己喜欢哪种用哪种</p>
+<p>枚举顺序:<br>left - 0<br>right - 1<br>center - 2<br>justify - 3<br>start - 4<br>end - 5</p>
+</blockquote>
+</li>
+</ul>
 
       
     </div>
@@ -567,7 +601,7 @@
   <p><span>本文标题:</span><a href="/2019/01/23/Flutter学习笔记/">Flutter学习笔记</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 IceDream 的个人博客">IceDream</a></p>
   <p><span>发布时间:</span>2019年01月23日 - 17:01</p>
-  <p><span>最后更新:</span>2019年01月26日 - 15:01</p>
+  <p><span>最后更新:</span>2019年01月26日 - 17:01</p>
   <p><span>原始链接:</span><a href="/2019/01/23/Flutter学习笔记/" title="Flutter学习笔记">http://blog.icedream1024.top/2019/01/23/Flutter学习笔记/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://blog.icedream1024.top/2019/01/23/Flutter学习笔记/" aria-label="复制成功！"></i></span>
   </p>
@@ -636,6 +670,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/31/UI入门自用笔记/" rel="prev" title="UI入门笔记">
+                UI入门笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -750,7 +788,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -761,7 +799,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -772,7 +810,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -821,7 +859,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-开发环境搭建-Mac-OS"><span class="nav-number">1.</span> <span class="nav-text">Flutter 开发环境搭建(Mac OS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-常用技巧"><span class="nav-number">2.</span> <span class="nav-text">Flutter 常用技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-填坑大全"><span class="nav-number">3.</span> <span class="nav-text">Flutter 填坑大全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在启动项目的时候一直处于-Initializing-gradle…"><span class="nav-number">3.1.</span> <span class="nav-text">在启动项目的时候一直处于 Initializing gradle…</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter常用组件和API"><span class="nav-number">4.</span> <span class="nav-text">Flutter常用组件和API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Text"><span class="nav-number">4.1.</span> <span class="nav-text">Text</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-开发环境搭建-Mac-OS"><span class="nav-number">1.</span> <span class="nav-text">Flutter 开发环境搭建(Mac OS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-常用技巧"><span class="nav-number">2.</span> <span class="nav-text">Flutter 常用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令"><span class="nav-number">2.1.</span> <span class="nav-text">命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键"><span class="nav-number">2.2.</span> <span class="nav-text">快捷键</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-填坑大全"><span class="nav-number">3.</span> <span class="nav-text">Flutter 填坑大全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在启动项目的时候一直处于-Initializing-gradle…"><span class="nav-number">3.1.</span> <span class="nav-text">在启动项目的时候一直处于 Initializing gradle…</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter常用组件和API"><span class="nav-number">4.</span> <span class="nav-text">Flutter常用组件和API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Text-组件"><span class="nav-number">4.1.</span> <span class="nav-text">Text - 组件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#textAlign-属性"><span class="nav-number">4.1.1.</span> <span class="nav-text">textAlign - 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#TextAlign-center"><span class="nav-number">4.1.1.1.</span> <span class="nav-text">TextAlign.center</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#TextAlign-left"><span class="nav-number">4.1.1.2.</span> <span class="nav-text">TextAlign.left</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#TextAlign-right"><span class="nav-number">4.1.1.3.</span> <span class="nav-text">TextAlign.right</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#TextAlign-justify"><span class="nav-number">4.1.1.4.</span> <span class="nav-text">TextAlign.justify</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#TextAlign-values"><span class="nav-number">4.1.1.5.</span> <span class="nav-text">TextAlign.values</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -864,7 +902,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.9k</span>
+    <span title="Site words total count">7.3k</span>
   
 </div>
 
@@ -885,7 +923,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3.9k字</span>
+  <span class="post-count">博客全站共7.3k字</span>
 </div>
 
 <div class="BbeiAn-info">
